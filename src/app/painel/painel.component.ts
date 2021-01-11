@@ -18,6 +18,8 @@ export class PainelComponent implements OnInit {
 
   public progresso: number = 0
 
+  public tentativas: number = 3
+
   constructor() { 
     this.atualizaRodada()
     
@@ -48,10 +50,17 @@ export class PainelComponent implements OnInit {
 
 
     } else {
-      alert('a traduçao esta errada')
+      //diminuir a variavel tentativas
+      this.tentativas--
+      console.log(`Tentativas: ${this.tentativas}`)
+
+      if(this.tentativas === -1) {
+        alert('Você perdeu todas as tentativas, inicie um novo jogo')
+      }
+      
       
     }
-    
+    console.log(this.tentativas)
   }
 
   public atualizaRodada(): void {
