@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "rm -rf dist/ && ng build --baseHref='traduzaptbr-angular/' --deployUrl='https://riosi.github.io/traduzaptbr-angular/' --prod",
+    "build": "rm -rf dist/ && ng build --baseHref='./' --deployUrl='https://riosi.github.io/traduzaptbr-angular/' --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
