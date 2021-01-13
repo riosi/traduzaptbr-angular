@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  assetsRoot: './src/assets'
+  assetsRoot: '../assets'
 };
 
 /*
