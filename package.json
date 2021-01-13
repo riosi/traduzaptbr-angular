@@ -4,10 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --base-href='https://riosi.github.io/traduzaptbr-angular/'",
+    "build": "rm -rf dist/ && ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy": "git add dist/ && git commit -m 'auto deploy' && git subtree push --prefix dist origin gh-pages"
   },
   "private": true,
   "dependencies": {
